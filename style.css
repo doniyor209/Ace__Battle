@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+body {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    background-color: #1E1C1F;
+}
+
+.header01 .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.header01 .container nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    transition: 1s;
+}
+
+nav ul li a:hover {
+    font-size: 25px;
+    color: red;
+}
+
+.header01 h2 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: white;
+}
+
+.btnBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.Sign_In {
+    width: 96px;
+    height: 40px;
+    opacity: 1;
+    border-radius: 8px;
+    border-width: 1px;
+    border: 1px solid #FF0000;
+    background-color: inherit;
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: white;
+    transition: 1s;
+}
+
+.Sign_In:hover {
+    background: #FF00002E;
+    color: white;
+    font-size: 23px;
+    transform: scale(1.2);
+}
+
+.Sign_Up {
+    width: 96px;
+    height: 40px;
+    opacity: 1;
+    border-radius: 8px;
+    border-width: 1px;
+    border: 1px solid #FF0000;
+    background-color: inherit;
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: white;
+    transition: 1s;
+}
+
+.Sign_Up:hover {
+    background: #FF00002E;
+    color: white;
+    font-size: 23px;
+    transform: scale(1.2);
+}
+
+.section01 {
+    background-image: url("./img/Rectangle\ 23\ 1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 152px;
+    padding-bottom: 201px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.Introduction {
+    width: 895px;
+    height: 490px;
+    opacity: 1;
+    border-width: 1px;
+    background: #1E1C1F;
+    border: 1px solid #FFFFFF1A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Introduction h1 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+
+.Introduction p {
+    margin-top: 107px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+
+.Introduction span {
+    color: red;
+}
+
+.section02 {
+    background-color: white;
+}
+
+
+.Box {
+    width: 796px;
+    height: 121px;
+    opacity: 1;
+    background-color: #1E1E1E;
+    padding-left: px;
+}
+
+.Box h1 {
+    color: white;
+    font-family: Poppins;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.RadiusBox h1 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: white;
+}
+
+.RadiusBox {
+    width: 796px;
+    height: 121px;
+    opacity: 1;
+    background-color: #FF0000;
+    clip-path: polygon(0 0,
+            95% 0,
+            100% 0,
+            90% 100%,
+            0 100%);
+    text-align: center;
+    padding-top: 12px;
+}
+
+.RadiusBoxDf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.HeroSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.HeroText h3 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: black;
+}
+
+.HeroText p {
+    margin-top: 45px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: black;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: url("./img/Rectangle\ 23-2\ 1.jpg") center / cover no-repeat;
+    position: relative;
+}
+
+.overlay {
+    height: 100%;
+    width: 55%;
+    background: linear-gradient(to right,
+            rgba(20, 20, 20, 0.95),
+            rgba(20, 20, 20, 0.85),
+            rgba(20, 20, 20, 0));
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    padding-left: 80px;
+    max-width: 520px;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+
+.content h1 span {
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+    text-underline-offset: 6px;
+}
+
+.content p {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #d0d0d0;
+    max-width: 430px;
+}
+
+.section04 {
+    background-color: white;
+}
+
+.AceBattle h1 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 48px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: black;
+}
+
+.AceBattle p {
+    padding-top: 70px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: black;
+}
+
+.AceBattleWebsite {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+
+.bottomImg {
+    padding-top: 100px;
+}
+
+.footer h5 {
+    padding-top: 170px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: white;
+}
+
+.footer p {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 50px;
+}

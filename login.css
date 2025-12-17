@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1E1C1F;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 30px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* ==================== HEADER (тот же, что в register) ==================== */
+.header {
+    margin-bottom: 40px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    color: white;
+}
+
+.nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.4s ease;
+}
+
+.nav a:hover {
+    color: red;
+    font-size: 25px;
+}
+
+.btn-box {
+    display: flex;
+    gap: 25px;
+}
+
+.btn-sign-in,
+.btn-sign-up {
+    width: 96px;
+    height: 40px;
+    border: 1px solid #FF0000;
+    border-radius: 8px;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.btn-sign-in:hover,
+.btn-sign-up:hover {
+    background: #FF00002E;
+    font-size: 23px;
+    transform: scale(1.1);
+}
+
+/* ==================== HERO SECTION (баннер) ==================== */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+                url('./img/IMG_1023\ 3.png') center/cover no-repeat;
+    height: 253px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    border-radius: 12px;
+}
+
+.hero-section h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    text-align: center;
+}
+
+/* ==================== LOGIN FORM ==================== */
+.login-wrapper {
+    display: flex;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    margin-bottom: 80px;
+}
+
+.image-section img{
+    width: 100%;
+    height: 100%;
+}
+
+.form-section {
+    flex: 1;
+    padding: 80px 60px;
+    background: white;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-section h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: #000;
+}
+
+.form-section label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+    font-size: 18px;
+}
+
+.form-section label.required::after {
+    content: " *";
+    color: red;
+}
+
+.form-section input[type="email"],
+.form-section input[type="password"] {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #f9f9f9;
+    transition: border 0.3s;
+}
+
+.form-section input:focus {
+    outline: none;
+    border-color: #d32f2f;
+}
+
+.login-btn {
+    background-color: #FF0000;
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-bottom: 30px;
+}
+
+.login-btn:hover {
+    background-color: #e60000;
+}
+
+.register-link {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+}
+
+.register-link a {
+    color: #FF0000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* ==================== FOOTER ==================== */
+.footer {
+    margin-top: auto;
+    padding: 40px 0;
+    background: #111;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 992px) {
+    .login-wrapper {
+        flex-direction: column;
+    }
+    
+    .image-section {
+        min-height: 400px;
+    }
+    
+    .red-overlay {
+        width: 100%;
+        height: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .btn-box {
+        margin-top: 20px;
+    }
+    
+    .form-section {
+        padding: 50px 30px;
+    }
+    
+    .hero-section h2 {
+        font-size: 36px;
+    }
+}
+
+.red {
+    position: absolute;
+    width: 933px;
+    height: 1060px;
+    opacity: 1;
+    background-color: red;
+}
+.login-section {
+    position: relative;
+    top: 100px;
+}
